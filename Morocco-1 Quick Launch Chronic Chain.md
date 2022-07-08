@@ -104,7 +104,8 @@ sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" ~/.cht/c
 ### Add Seeds:
 
 ```bash
-sed -E -i 's/seeds = \".*\"/seeds = \"ba4c7434bdb00f49b26450242713d52e7c6c8f73@147.182.180.205:26656"/' $HOME/.cht/config/config.toml
+seeds=$(curl -s https://raw.githubusercontent.com/ChronicNetwork/net/main/mainnet/v1.1/seeds.txt | paste -sd',')
+sed -i.bak -e "s/^seeds *=.*/seeds = \"$seeds\"/" ~/.cht/config/config.toml
 ```
 
 ### Start the network:
@@ -120,7 +121,7 @@ Your node should now be catching up to the current state of the network!
 ```bash
 chtd tx staking create-validator \
   --amount=100000000ucht \
-  --pubkey=$'(chtd tendermint show-validator)' \
+  --pubkey=$(chtd tendermint show-validator) \
   --moniker="your-moniker" \
   --chain-id=morocco-1 \
   --commission-rate="0.04" \
