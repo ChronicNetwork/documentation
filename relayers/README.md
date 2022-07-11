@@ -11,6 +11,7 @@ To enable transfers of the CHT & CGAS token between various cosmos blockchains, 
 | <p>host</p><p>project name</p> | <p>host</p><p>chain-id</p> | <p>host </p><p>channel</p> | <p>morocco-1</p><p>channel</p> | <p>CHT Token<br>IBC address on host network</p>                     | <p>CGAS Token<br>IBC address on host network</p> 
 | -------- | -------------------------- | -------------------------- | --------------------------- | -------------------------------------------------------------------- | ----------------- | 
 | Akash Network | akashnet-2          | TBA                        | TBA                   | ibc/ | ibc/ |
+| Axelar Network  | axelar-dojo-1          | TBA                        | TBA                   | ibc/ | ibc/ |
 | Bitcanna | bitcanna-1           | TBA                        | TBA                   | ibc/ | ibc/ |
 | BitSong | bitsong-2b           | TBA                        | TBA                   | ibc/ | ibc/ |
 | Chihuahua Chain | chihuahua-1      | TBA                        | TBA                   | ibc/ | ibc/ |
