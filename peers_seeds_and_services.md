@@ -33,9 +33,9 @@ We'd like to ask you to provide us your ***endpoints*** and/or ***persistent_pee
   "peers": {
     "seeds": [
       {
-        "id": "",
-        "address": "",
-        "provider": ""
+        "id": "ba4c7434bdb00f49b26450242713d52e7c6c8f73",
+        "address": "147.182.180.205:26656",
+        "provider": "Third Party"
       }
     ]
     "persistent_peers": [
