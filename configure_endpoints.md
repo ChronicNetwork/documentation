@@ -28,7 +28,7 @@ Each module exposes a [Protobuf `Query` service](../building-modules/messages-an
 
 Note: It is not possible to expose any [Protobuf `Msg` service](../building-modules/messages-and-queries.md#messages) endpoints via gRPC. Transactions must be generated and signed using the CLI or programmatically before they can be broadcasted using gRPC. See [Generating, Signing, and Broadcasting Transactions](../run-node/txs.html) for more information.
 
-The `grpc.Server` is a concrete gRPC server, which spawns and serves all gRPC query requests and a broadcast transaction request. This server can be configured inside `~/.simapp/config/app.toml`:
+The `grpc.Server` is a concrete gRPC server, which spawns and serves all gRPC query requests and a broadcast transaction request. This server can be configured inside `~/.cht/config/app.toml`:
 
 * `grpc.enable = true|false` field defines if the gRPC server should be enabled. Defaults to `true`.
 * `grpc.address = {string}` field defines the address (really, the port, since the host should be kept at `0.0.0.0`) the server should bind to. Defaults to `0.0.0.0:9090`.
