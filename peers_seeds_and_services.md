@@ -72,6 +72,10 @@ We'd like to ask you to provide us your ***endpoints*** and/or ***persistent_pee
         "address": "https://rpc.chronic.nodestake.top/",
         "provider": "NodeStake.top"
       },
+      {
+        "address": "https://rpc-chronic.zenchainlabs.io/",
+        "provider": "ZenChainLabs"
+      },
     ],
     "grpc": [
     {
@@ -83,6 +87,10 @@ We'd like to ask you to provide us your ***endpoints*** and/or ***persistent_pee
      {
         "address": "https://api.chronic.nodestake.top/",
         "provider": "NodeStake.top"
+      },
+      {
+        "address": "https://api-chronic.zenchainlabs.io/",
+        "provider": "ZenChainLabs"
       }]
   }
   ```
